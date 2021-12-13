@@ -5,15 +5,11 @@
 
 #ifndef _READ_CSV_
 #define _READ_CSV_
-
-#include <iostream>
-#include <string>
 #include <vector>
-#include <fstream>
-#include <sstream>
 
 namespace read {
 
+	/*
 	struct Line {
 		// structure that stores each line
 		float x_axis; // the first column, stands for the x-axis
@@ -21,18 +17,16 @@ namespace read {
 
 		Line(float& x, float& y) :
 			x_axis(x), y_axis(y) {}
-	};
+	};*/
 
 	struct Data {
-		std::vector<Line> data;
+		std::vector<float> data_vec;
 
 		Data(int& nrows) {
-			data.reserve(nrows);
+			data_vec.reserve(nrows);
 		}
 
-		Line* get_line(int& row) {
-			return (row >= 0 && row < data.size()) ? (&data[row]) : nullptr;
-		}
+		Data(){}
 
 	};
 
