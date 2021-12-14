@@ -5,7 +5,7 @@ import Frechet
 if __name__ == "__main__":
 
     # open file
-    file_object = open(r"D:\MicrosoftVisualStudio\myprojects\Frechet_distance\test_files\loc1_each_timestamp.csv", encoding='UTF-8')
+    file_object = open(r"D:\MicrosoftVisualStudio\myprojects\Frechet_distance\test_files\loc3_each_timestamp.csv", encoding='UTF-8')
     try:
         file_content = file_object.readlines() # not very huge file, use readlines() to speed up
     finally:
@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
 
     # open file
-    file_object = open(r"D:\MicrosoftVisualStudio\myprojects\Frechet_distance\test_files\loc2_each_timestamp.csv", encoding='UTF-8')
+    file_object = open(r"D:\MicrosoftVisualStudio\myprojects\Frechet_distance\test_files\loc4_each_timestamp.csv", encoding='UTF-8')
     try:
         file_content = file_object.readlines() # not very huge file, use readlines() to speed up
     finally:
