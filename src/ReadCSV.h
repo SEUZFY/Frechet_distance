@@ -19,16 +19,18 @@ namespace read {
 			x_axis(x), y_axis(y) {}
 	};*/
 
-	struct Data {
+	struct MyData {
 		std::vector<float> data_vec;
 
-		Data(int& nrows) {
+		MyData(int& nrows) {
 			data_vec.reserve(nrows);
 		}
 
-		Data(){}
+		MyData(){}
 
 	};
+
+	void read_csv(const char* path, MyData& mydata);
 
 }
 
